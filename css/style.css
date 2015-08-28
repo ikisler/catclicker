@@ -18,7 +18,38 @@
 
 @media (max-width: 767px) {
   footer {
-    width:100%;
+    position: relative;
+    width: 100%;
+  }
+}
+
+@media (min-height: 500px) {
+  .cat-name {
+    font-size: 25px;
+    margin: auto 20px;
+  }
+  #cat {
+    max-height: 400px;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 499px) {
+  h2 {
+    font-size: 25px;
+  }
+  .cat-name {
+    font-size: 20px;
+    margin: auto 10px;
+
+  }
+
+  #cat {
+    max-height: 200px;
   }
 }
 
@@ -46,14 +77,8 @@ header {
 .cat-name {
   display: inline-block;
   padding: 10px;
-  margin: auto 20px;
-  font-size: 25px;
   cursor: hand;
   cursor: pointer;
-}
-
-#cat {
-  max-height: 400px;
 }
 
 #number {
@@ -63,9 +88,6 @@ header {
 footer {
   background-color: #ccffff;
   height: 60px;
-  position: absolute;
-  bottom: 0;
-  //width:1170px;
 }
 
 h4 {
